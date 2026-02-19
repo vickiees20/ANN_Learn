@@ -101,7 +101,7 @@ if submit_button:
     else:
         st.success(f"Customer is likely to stay with a probability of {prediction_proba:.2f}")
 
-    st.markdown(" ") # Replaced st.write("
----
-") with st.markdown("---")
+    st.markdown(" ") # Replaced st.write("---") with st.markdown("---")
     st.markdown("**Note:** A probability above 0.5 indicates a higher likelihood of churning.")
+
+
