@@ -15,11 +15,11 @@ st.write("### Predict if a customer will churn based on their characteristics.")
 def load_assets():
     try:
         model = load_model('model.keras')
-        with open('/content/drive/MyDrive/scaler.pkl', 'rb') as file:
+        with open('scaler.pkl', 'rb') as file:
             scaler = pickle.load(file)
-        with open('/content/drive/MyDrive/onehot_encoder.geo.pkl', 'rb') as file:
+        with open('onehot_encoder.geo.pkl', 'rb') as file:
             onehot_encoder_geo = pickle.load(file)
-        with open('/content/drive/MyDrive/label_encoder_gender.pkl', 'rb') as file:
+        with open('label_encoder_gender.pkl', 'rb') as file:
             label_encoder_gender = pickle.load(file)
         return model, scaler, onehot_encoder_geo, label_encoder_gender
     except Exception as e:
